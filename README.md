@@ -36,7 +36,7 @@ The library is available in the Figma community [here](https://www.figma.com/com
 License
 -------
 
-Apache-2.0 License, see [here](LICENSE).
+See [here](LICENSE).
 
 Credits
 -------
