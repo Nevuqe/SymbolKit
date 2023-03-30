@@ -17,11 +17,6 @@ const ignoreCleanFilenames = ['IconoirContext.tsx', 'server'];
 const targets = {
   'meta-data': { path: 'meta-data.json' },
   css: { path: 'css/iconoir.css' },
-  'iconoir-react': { react: true, path: 'packages/iconoir-react' },
-  'iconoir-react-native': {
-    react: true,
-    path: 'packages/iconoir-react-native',
-  },
 };
 
 // Get targets from command line arguments
@@ -250,42 +245,6 @@ const tasks = new Listr(
                                       }
                                     },
                                   },
-                                  ...(target === 'iconoir-react'
-                                    ? [
-                                        {
-                                          title:
-                                            'Building icon files (server components)',
-                                          skip: (ctx) => ctx[target]?.skip,
-                                          task: async (ctx) => {
-                                            try {
-                                              await execa(
-                                                'svgr',
-                                                [
-                                                  '--config-file',
-                                                  path.join(
-                                                    targets[target].path,
-                                                    '.svgrrc.json'
-                                                  ),
-                                                  '--out-dir',
-                                                  path.join(
-                                                    builtIconsDir,
-                                                    'server'
-                                                  ),
-                                                  '--template',
-                                                  'bin/templates/icon-template-server-component.cjs',
-                                                  '--index-template',
-                                                  'bin/templates/index-template.cjs',
-                                                  ctx.tmpDir,
-                                                ],
-                                                { preferLocal: true }
-                                              );
-                                            } catch (err) {
-                                              throw new Error(err.message);
-                                            }
-                                          },
-                                        },
-                                      ]
-                                    : []),
                                 ],
                                 { concurrent: false, exitOnError: false }
                               ),
