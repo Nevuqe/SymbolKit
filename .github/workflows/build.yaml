@@ -10,7 +10,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     # Skip job on forks
-    if: github.repository_owner == 'iconoir-icons'
+    if: github.repository_owner == 'nevuqe'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
