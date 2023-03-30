@@ -31,7 +31,6 @@
   "bugs": {
     "url": "https://github.com/lucaburgio/iconoir/issues"
   },
-  "homepage": "https://iconoir.com",
   "devDependencies": {
     "@atomist/yaml-updater": "^1.0.2",
     "@svgr/cli": "^5.5.0",
