@@ -1,74 +1,44 @@
-# Iconoir
+What is SymbolKit?
+==================
 
-<div>
+SymbolKit, an open-source library of over 1300+ SVG icons that you can use in your own projects. These icons are intended for the usage of UI elements in the Enso Operating System. However, these can be used for designing apps, or creating marketing materials. SymbolKit has the icons you need to make your designs stand out.
 
-  <a href="https://github.com/lucaburgio/iconoir/releases">
-    <img src="https://img.shields.io/github/v/release/lucaburgio/iconoir?style=flat-square" alt="Version" />
-  </a>
-  <a href="https://github.com/lucaburgio/iconoir">
-    <img src="https://img.shields.io/github/stars/lucaburgio/iconoir?style=flat-square" alt="Project Stars" />
-  </a>
-  <a href="https://github.com/lucaburgio/iconoir/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/lucaburgio/iconoir?style=flat-square" alt="License" />
-  </a>
-  <a href="https://discord.gg/txXcKCAmKW">
-    <img src="https://img.shields.io/discord/998909400234348615?color=5865f2&label=Discord&style=flat-square" alt="Discord" />
-  </a>
-</div>
+For more information and resources on SymbolKit, you can read through our Human Interface Guidelines at [developer.nevuqe.com](https://developer.nevuqe.com).
 
-## What is Iconoir?
+If you have any questions or need support with SymbolKit, you can contact Nevuqe at [hello@nevuqe.com](mailto:hello@nevuqe.com).
 
-Iconoir is an open-source library with 1300+ unique SVG icons, designed on a 24x24 pixels grid. No premium icons, no email sign-up, no newsletters.
+For security-related enquiries, it is required that you encrypt your email using Nevuqe's PGP key, which can be found at [developer.nevuqe.com](https://developer.nevuqe.com/keys/signing-key.asc), and please contact us at [security@nevuqe.com](mailto:security@nevuqe.com).
 
-<a href="https://iconoir.com"><strong>Browse at iconoir.com &rarr;</strong></a>
+CSS
+---
 
-
-
-
-
-## Basic Usage
-
-You can download any icon of the pack directly from https://iconoir.com or get them from this repository.
-
-Additionally, the icons are available via the `iconoir` NPM package:
-```bash
-yarn add iconoir
-# or
-npm i iconoir
-```
-
-Example usage:
-```js
-import Iconoir from 'iconoir/icons/iconoir.svg'
-```
-
-## Framer
-
-Iconoir is happily part of [Framer](https://framer.com) now. To start using the icons: On the top menu, `Insert` > `Graphics` > `Iconoir`.
-You can switch between icons from the right sidebar in the editor.
-
-## CSS
-
-Import the CSS File:
+To use SymbolKit in a web project, import our CSS File:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/Nevuqe/SymbolKit/main/css/symbolkit.css?token=GHSAT0AAAAAACAXY3UCA5XW2ON5DF6GFBOGZBFL6KQ">
 ```
 
 Here is an example in HTML:
 
 ```html
-<i class="iconoir-hand-brake"></i>
+<i class="symbolkit-hand-brake"></i>
 ```
-The class must always be "iconoir-" and then the name of the icon. You can find the names of the icons [here](https://iconoir.com).
+The class must always be "symbolkit-" and then the name of the icon.
 
 The icons are `display: inline-block` and default to the current font size. You can control this
 by adjusting the `::before` styles of the element (which is where the icons are added as a mask).
 
-## Figma
+Figma
+-----
 
-The library is available in the Figma community [here](https://www.figma.com/community/file/983248991460488027/Iconoir-Pack).
+The library is available in the Figma community [here](https://www.figma.com/community/file/1223220311556704784).
 
-## License
+License
+-------
 
-MIT License
+Apache-2.0 License, see [here](LICENSE).
+
+Credits
+-------
+
+This icon library is a fork of [Iconoir](https://iconoir.com), all credits go to the original authors and contributors.

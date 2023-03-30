@@ -15,7 +15,7 @@ function publishNpmPackage(name) {
   console.info('Publishing %s', name);
 
   const packageJsonPath =
-    name === 'iconoir'
+    name === 'symbolkit'
       ? 'package.json'
       : path.join('packages', name, 'package.json');
   const contents = JSON.parse(fs.readFileSync(packageJsonPath).toString());
@@ -39,4 +39,4 @@ function publishPubPackage(name) {
   console.info('pubspec.yaml updated');
 }
 
-publishNpmPackage('iconoir');
+publishNpmPackage('symbolkit');

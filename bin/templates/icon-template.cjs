@@ -10,12 +10,12 @@ const template = (
   const typeScriptTpl = template.smart({ plugins });
   props[0].name = 'passedProps';
   return typeScriptTpl.ast`${imports}
-import { IconoirContext } from './IconoirContext'
+import { SymbolKitContext } from './SymbolKitContext'
 
 ${interfaces}
 
 function ${componentName}(${props}) {
-  const context = React.useContext(IconoirContext);
+  const context = React.useContext(SymbolKitContext);
   const props = { ...context, ...passedProps };
   return ${jsx};
 }

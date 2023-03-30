@@ -1,7 +1,7 @@
 {
-  "name": "iconoir",
+  "name": "symbolkit",
   "version": "6.5.0",
-  "description": "The biggest open source icon library with tons of free icons.",
+  "description": "Nevuqe's SymbolKit library, 1,300+ SVG icons.",
   "type": "module",
   "files": [
     "css",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucaburgio/iconoir.git"
+    "url": "git+https://github.com/Nevuqe/symbolkit.git"
   },
   "keywords": [
     "free",
@@ -25,9 +25,9 @@
     "svg",
     "css"
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/lucaburgio/iconoir/issues"
+    "url": "https://github.com/Nevuqe/symbolkit/issues"
   },
   "devDependencies": {
     "@atomist/yaml-updater": "^1.0.2",

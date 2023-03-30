@@ -7,7 +7,7 @@ function template(filePaths) {
     return `export { default as ${exportName} } from './${basename}'`;
   });
   exportEntries.push(
-    "export { IconoirProvider, IconoirContext, IconoirContextValue } from './IconoirContext'"
+    "export { SymbolKitProvider, SymbolKitContext, SymbolKitContextValue } from './SymbolKitContext'"
   );
   return exportEntries.join('\n');
 }

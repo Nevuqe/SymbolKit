@@ -10,13 +10,13 @@ import { incompatibleNames } from '../constants.js';
 // Paths
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
-const iconoirIconsDir = path.join(rootDir, 'icons');
-const ignoreCleanFilenames = ['IconoirContext.tsx', 'server'];
+const symbolkitIconsDir = path.join(rootDir, 'icons');
+const ignoreCleanFilenames = ['SymbolKitContext.tsx', 'server'];
 
 // Targets for building icons
 const targets = {
   'meta-data': { path: 'meta-data.json' },
-  css: { path: 'css/iconoir.css' },
+  css: { path: 'css/symbolkit.css' },
 };
 
 // Get targets from command line arguments
@@ -41,12 +41,12 @@ const tasks = new Listr(
     {
       title: 'Fetching icons',
       task: async (ctx) => {
-        ctx.iconoirIconsFiles = await fs.readdir(iconoirIconsDir);
+        ctx.symbolkitIconsFiles = await fs.readdir(symbolkitIconsDir);
       },
     },
     {
       title: 'Building targets',
-      skip: (ctx) => !ctx.iconoirIconsFiles,
+      skip: (ctx) => !ctx.symbolkitIconsFiles,
       task: (_, task) =>
         task.newListr(
           [
@@ -57,7 +57,7 @@ const tasks = new Listr(
               task: async (ctx) => {
                 await fs.writeFile(
                   path.join(rootDir, targets['meta-data'].path),
-                  JSON.stringify({ icons: ctx.iconoirIconsFiles })
+                  JSON.stringify({ icons: ctx.symbolkitIconsFiles })
                 );
               },
             },
@@ -74,7 +74,7 @@ const tasks = new Listr(
                     )
                   ).replace('[YEAR]', new Date().getFullYear()),
                 ];
-                ctx.iconoirIconsFiles.forEach((file) => {
+                ctx.symbolkitIconsFiles.forEach((file) => {
                   const fileContents = readFileSync(
                     path.join(__dirname, '../icons/', file)
                   )
@@ -83,7 +83,7 @@ const tasks = new Listr(
                     .replace(/(width|height)="[0-9]+"/g, '')
                     .replace(/[ ]+/g, ' ');
                   content.push(
-                    `.iconoir-${
+                    `.symbolkit-${
                       path.parse(file).name
                     }::before{mask-image:url('data:image/svg+xml;charset=utf-8,${fileContents}');-webkit-mask-image:url('data:image/svg+xml;charset=utf-8,${fileContents}');}`
                   );
