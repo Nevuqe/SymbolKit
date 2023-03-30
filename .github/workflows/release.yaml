@@ -42,14 +42,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Generate changelog file
-        uses: rhysd/changelog-from-release/action@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          file: packages/iconoir-flutter/CHANGELOG.md
-          commit: false
-          args: -d=false
-
       - name: Build
         run: pnpm run build
 
@@ -74,12 +66,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         continue-on-error: true
-
-      - name: Publish Flutter
-        uses: k-paxian/dart-package-publisher@v1.5.1
-        with:
-          credentialJson: ${{ secrets.PUB_CREDENTIAL_JSON }}
-          relativePath: ./packages/iconoir-flutter
 
       - name: Trigger Website Workflow
         uses: actions/github-script@v6

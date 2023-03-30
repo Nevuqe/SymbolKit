@@ -1,6 +1,3 @@
-import 'package:flutter/widgets.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
 class __icon__(pascalCase) extends StatelessWidget {
   final Color? color;
   final double? width;
