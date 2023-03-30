@@ -3,7 +3,7 @@
 Import the CSS File:
 
 ```html
-<link rel="stylesheet" href="https://raw.githubusercontent.com/Nevuqe/SymbolKit/main/css/symbolkit.css?token=GHSAT0AAAAAACAXY3UCA5XW2ON5DF6GFBOGZBFL6KQ">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/Nevuqe/SymbolKit/main/css/symbolkit.css">
 ```
 
 Here is an example in HTML:
