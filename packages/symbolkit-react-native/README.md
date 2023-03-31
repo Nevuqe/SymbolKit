@@ -1,9 +1,5 @@
 # React Native SymbolKit Icons
 
-![NPM Version](https://img.shields.io/npm/v/symbolkit-react-native?style=flat-square)
-![NPM Monthly Downloads](https://img.shields.io/npm/dm/symbolkit-react-native?style=flat-square)
-![NPM License](https://img.shields.io/npm/l/symbolkit-react-native?style=flat-square)
-
 SymbolKit, an open-source iconography library consisting of 1,300+ SVG icons.
 
 `symbolkit-react-native` is an open source package that exports these icons as React Native components (`react-native-svg`) that can be used in all of your React Native projects.

@@ -1,9 +1,5 @@
 # React SymbolKit Icons
 
-![NPM Version](https://img.shields.io/npm/v/symbolkit-react?style=flat-square)
-![NPM Monthly Downloads](https://img.shields.io/npm/dm/symbolkit-react?style=flat-square)
-![NPM License](https://img.shields.io/npm/l/symbolkit-react?style=flat-square)
-
 SymbolKit, an open-source iconography library consisting of 1,300+ SVG icons.
 
 `symbolkit-react` is an open source package that exports these icons as React.js components that can be used in all of your React projects.
