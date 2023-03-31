@@ -38,7 +38,7 @@ The library is available in the Figma community [here](https://www.figma.com/com
 License
 -------
 
-This icon library is licensed under the Apache-2.0 license, to see the full license, read [here](LICENSE).
+This icon library is licensed under the Apache-2.0 license, to see the full license see [here](license.txt).
 
 Credits
 -------
