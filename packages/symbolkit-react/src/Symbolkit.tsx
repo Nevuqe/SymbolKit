@@ -1,8 +1,14 @@
 import * as React from "react";
-function SvgSymbolKit(
-  props: React.SVGProps<SVGSVGElement>,
+import { SymbolKitContext } from "./SymbolKitContext";
+function SvgSymbolkit(
+  passedProps: React.SVGProps<SVGSVGElement>,
   svgRef?: React.Ref<SVGSVGElement>
 ) {
+  const context = React.useContext(SymbolKitContext);
+  const props = {
+    ...context,
+    ...passedProps,
+  };
   return (
     <svg
       width="1.5em"
@@ -30,5 +36,5 @@ function SvgSymbolKit(
     </svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgSymbolKit);
+const ForwardRef = React.forwardRef(SvgSymbolkit);
 export default ForwardRef;
