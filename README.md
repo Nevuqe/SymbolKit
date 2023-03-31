@@ -1,6 +1,8 @@
 What is SymbolKit?
 ==================
 
+<img align="right" width="400" height="400" src="assets/icon.png">
+
 SymbolKit, an open-source library of over 1300+ SVG icons that you can use in your own projects. These icons are intended for the usage of UI elements in the Enso Operating System. However, these can be used for designing apps, or creating marketing materials. SymbolKit has the icons you need to make your designs stand out.
 
 For more information and resources on SymbolKit, you can read through our Human Interface Guidelines at [developer.nevuqe.com](https://developer.nevuqe.com).
@@ -36,9 +38,15 @@ The library is available in the Figma community [here](https://www.figma.com/com
 License
 -------
 
-See [here](LICENSE).
+This icon library is licensed under the Apache-2.0 license, to see the full license, read [here](LICENSE).
 
 Credits
 -------
 
-This icon library is a fork of [Iconoir](https://iconoir.com), all credits go to the original authors and contributors.
+SymbolKit is a fork of an icon library named [Iconoir](https://iconoir.com), all credits go to [Luca Burgio](https://lucaburgio.com/), and all Iconoir [contributors](https://github.com/iconoir-icons/iconoir/graphs/contributors).
+
+Links:
+
+https://iconoir.com/
+https://lucaburgio.com/
+https://github.com/iconoir-icons/iconoir/graphs/contributors
