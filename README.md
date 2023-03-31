@@ -11,6 +11,9 @@ If you have any questions or need support with SymbolKit, you can contact Nevuqe
 
 For security-related enquiries, it is required that you encrypt your email using Nevuqe's PGP key, which can be found at [developer.nevuqe.com](https://developer.nevuqe.com/keys/signing-key.asc), and please contact us at [security@nevuqe.com](mailto:security@nevuqe.com).
 
+Plugins
+=======
+
 CSS
 ---
 
@@ -30,10 +33,23 @@ The class must always be "symbolkit-" and then the name of the icon.
 The icons are `display: inline-block` and default to the current font size. You can control this
 by adjusting the `::before` styles of the element (which is where the icons are added as a mask).
 
+React
+-----
+
+A React library is available to install under the name `symbolkit-react`. For more details, see the package [README](./packages/symbolkit-react).
+
+React Native
+------------
+
+A React Native library is available to install under the name `symbolkit-react-native`. For more details, see the package [README](./packages/symbolkit-react-native).
+
 Figma
 -----
 
-The library is available in the Figma community [here](https://www.figma.com/community/file/1223220311556704784).
+The SymbolKit library is available in the Figma community [here](https://www.figma.com/community/file/1223220311556704784).
+
+Extras
+======
 
 License
 -------

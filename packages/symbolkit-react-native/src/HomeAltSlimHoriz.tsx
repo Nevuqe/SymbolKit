@@ -1,0 +1,34 @@
+import * as React from "react";
+import Svg, { SvgProps, Path } from "react-native-svg";
+import { SymbolKitContext } from "./SymbolKitContext";
+function SvgHomeAltSlimHoriz(
+  passedProps: SvgProps,
+  svgRef?: React.Ref<React.Component<SvgProps>>
+) {
+  const context = React.useContext(SymbolKitContext);
+  const props = {
+    ...context,
+    ...passedProps,
+  };
+  return (
+    <Svg
+      width="1.5em"
+      height="1.5em"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      fill="none"
+      color="currentColor"
+      ref={svgRef}
+      {...props}
+    >
+      <Path
+        d="M10 16h4M2 8l9.732-4.866a.6.6 0 01.536 0L22 8M20 11v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+}
+const ForwardRef = React.forwardRef(SvgHomeAltSlimHoriz);
+export default ForwardRef;

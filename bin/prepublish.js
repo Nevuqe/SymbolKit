@@ -40,3 +40,5 @@ function publishPubPackage(name) {
 }
 
 publishNpmPackage('symbolkit');
+publishNpmPackage('symbolkit-react');
+publishNpmPackage('symbolkit-react-native');

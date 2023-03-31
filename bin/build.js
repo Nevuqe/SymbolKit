@@ -17,6 +17,11 @@ const ignoreCleanFilenames = ['SymbolKitContext.tsx', 'server'];
 const targets = {
   'meta-data': { path: 'meta-data.json' },
   css: { path: 'css/symbolkit.css' },
+  'symbolkit-react': { react: true, path: 'packages/symbolkit-react' },
+  'symbolkit-react-native': {
+    react: true,
+    path: 'packages/symbolkit-react-native',
+  },
 };
 
 // Get targets from command line arguments
@@ -94,9 +99,218 @@ const tasks = new Listr(
                 );
               },
             },
+            {
+              title: 'Building React libraries',
+              enabled: () =>
+                cliTargets.length === 0 ||
+                cliTargets.filter((cliTarget) => targets[cliTarget]?.react)
+                  .length > 0,
+              task: (_, task) =>
+                task.newListr(
+                  [
+                    {
+                      title: 'Creating temporary directory',
+                      task: async (ctx) => {
+                        try {
+                          ctx.tmpDir = await fs.mkdtemp(
+                            path.join(os.tmpdir(), 'symbolkit-')
+                          );
+                        } catch (err) {
+                          ctx.skip = true;
+                          throw new Error(err.message);
+                        }
+                      },
+                    },
+                    {
+                      title:
+                        'Copying icon files to temporary directory, while renaming icons with incompatible names',
+                      skip: (ctx) => ctx.skip,
+                      task: async (ctx) => {
+                        try {
+                          const promises = ctx.symbolkitIconsFiles.map((file) => {
+                            const srcFilePath = path.join(
+                              symbolkitIconsDir,
+                              file
+                            );
+                            const iconName = file.split('.')[0];
+                            const dstFileName =
+                              iconName in incompatibleNames
+                                ? incompatibleNames[iconName]
+                                : iconName;
+                            const dstFilePath = path.join(
+                              ctx.tmpDir,
+                              `${dstFileName}.svg`
+                            );
+
+                            return fs.copyFile(srcFilePath, dstFilePath);
+                          });
+                          return Promise.all(promises).catch((err) => {
+                            ctx.skip = true;
+                            throw new Error(err.message);
+                          });
+                        } catch (err) {
+                          ctx.skip = true;
+                          throw new Error(err.message);
+                        }
+                      },
+                    },
+                    {
+                      skip: (ctx) => ctx.skip,
+                      task: (_, task) => {
+                        const targetsToBuild =
+                          cliTargets.length > 0
+                            ? cliTargets.filter(
+                                (cliTarget) => targets[cliTarget]?.react
+                              )
+                            : Object.keys(targets).filter(
+                                (target) => targets[target].react
+                              );
+                        const tasks = targetsToBuild.map((target) => {
+                          const builtIconsDir = path.join(
+                            rootDir,
+                            targets[target].path,
+                            'src'
+                          );
+                          return {
+                            title: `Building ${target}`,
+                            task: (_, task) =>
+                              task.newListr(
+                                [
+                                  {
+                                    title: 'Cleaning target directory',
+                                    task: async (ctx) => {
+                                      try {
+                                        const files = await fs.readdir(
+                                          builtIconsDir
+                                        );
+                                        const serverFiles = existsSync(
+                                          path.join(builtIconsDir, 'server')
+                                        )
+                                          ? (
+                                              await fs.readdir(
+                                                path.join(
+                                                  builtIconsDir,
+                                                  'server'
+                                                )
+                                              )
+                                            ).map((file) => `server/${file}`)
+                                          : [];
+                                        const promises = [
+                                          ...files,
+                                          ...serverFiles,
+                                        ]
+                                          .filter(
+                                            (file) =>
+                                              !ignoreCleanFilenames.includes(
+                                                path.basename(file)
+                                              )
+                                          )
+                                          .map((file) => {
+                                            return fs.unlink(
+                                              path.join(builtIconsDir, file)
+                                            );
+                                          });
+                                        return Promise.all(promises).catch(
+                                          (err) => {
+                                            ctx[target] = { skip: true };
+                                            throw new Error(err.message);
+                                          }
+                                        );
+                                      } catch (err) {
+                                        ctx[target] = { skip: true };
+                                        throw new Error(err.message);
+                                      }
+                                    },
+                                  },
+                                  {
+                                    title: 'Building icon files',
+                                    skip: (ctx) => ctx[target]?.skip,
+                                    task: async (ctx) => {
+                                      try {
+                                        await execa(
+                                          'svgr',
+                                          [
+                                            '--config-file',
+                                            path.join(
+                                              targets[target].path,
+                                              '.svgrrc.json'
+                                            ),
+                                            '--out-dir',
+                                            builtIconsDir,
+                                            '--template',
+                                            'bin/templates/icon-template.cjs',
+                                            '--index-template',
+                                            'bin/templates/index-template.cjs',
+                                            ctx.tmpDir,
+                                          ],
+                                          { preferLocal: true }
+                                        );
+                                      } catch (err) {
+                                        throw new Error(err.message);
+                                      }
+                                    },
+                                  },
+                                  ...(target === 'symbolkit-react'
+                                    ? [
+                                        {
+                                          title:
+                                            'Building icon files (server components)',
+                                          skip: (ctx) => ctx[target]?.skip,
+                                          task: async (ctx) => {
+                                            try {
+                                              await execa(
+                                                'svgr',
+                                                [
+                                                  '--config-file',
+                                                  path.join(
+                                                    targets[target].path,
+                                                    '.svgrrc.json'
+                                                  ),
+                                                  '--out-dir',
+                                                  path.join(
+                                                    builtIconsDir,
+                                                    'server'
+                                                  ),
+                                                  '--template',
+                                                  'bin/templates/icon-template-server-component.cjs',
+                                                  '--index-template',
+                                                  'bin/templates/index-template.cjs',
+                                                  ctx.tmpDir,
+                                                ],
+                                                { preferLocal: true }
+                                              );
+                                            } catch (err) {
+                                              throw new Error(err.message);
+                                            }
+                                          },
+                                        },
+                                      ]
+                                    : []),
+                                ],
+                                { concurrent: false, exitOnError: false }
+                              ),
+                          };
+                        });
+                        return task.newListr(tasks, {
+                          concurrent: true,
+                          rendererOptions: { collapse: false },
+                        });
+                      },
+                    },
+                  ],
+                  { concurrent: false }
+                ),
+            },
           ],
           { concurrent: true }
         ),
+    },
+    {
+      title: 'Removing React temporary directory',
+      skip: (ctx) => !ctx.tmpDir,
+      task: async (ctx) => {
+        await fs.rm(ctx.tmpDir, { recursive: true });
+      },
     },
   ],
   {
