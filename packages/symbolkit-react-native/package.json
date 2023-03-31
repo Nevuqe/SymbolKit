@@ -1,7 +1,7 @@
 {
   "name": "symbolkit-react-native",
-  "version": "6.5.0",
-  "description": "React Native library for the SymbolKit icon set",
+  "version": "1.0.0",
+  "description": "A React Native library for the SymbolKit icon set",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/esm/index.js",
