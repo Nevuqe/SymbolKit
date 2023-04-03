@@ -50,7 +50,8 @@ This icon library is licensed under the Apache-2.0 license, to see the full lice
 
 ### Credits
 
-SymbolKit is a fork of an icon library named [Iconoir](https://iconoir.com), all credits go to [Luca Burgio](https://lucaburgio.com/), and all Iconoir [contributors](https://github.com/iconoir-icons/iconoir/graphs/contributors).
+SymbolKit is a fantastic icon library that has been forked from the incredible [Iconoir](https://iconoir.com/). We are incredibly grateful to [Luca Burgio](https://lucaburgio.com/) and all of the [Iconoir contributors](https://github.com/iconoir-icons/iconoir/graphs/contributors
+) for their dedication and hard work in creating such an amazing resource for designers and developers worldwide.
 
 Links:
 
