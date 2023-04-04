@@ -15,7 +15,6 @@ function SvgAppWindow(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       color="currentColor"
       ref={svgRef}
@@ -23,11 +22,11 @@ function SvgAppWindow(
     >
       <Path
         d="M2 19V5a2 2 0 012-2h16a2 2 0 012 2v14a2 2 0 01-2 2H4a2 2 0 01-2-2z"
-        stroke="currentColor"
+        stroke="#000"
       />
       <Path
-        d="M2 7h20M5 5.01l.01-.011M8 5.01l.01-.011M11 5.01l.01-.011"
-        stroke="currentColor"
+        d="M13 6.01l.01-.011M16 6.01l.01-.011M19 6.01l.01-.011"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
