@@ -17,13 +17,11 @@ function SvgBatteryEmpty(
       <g clipPath="url(#battery-empty_svg__clip0_1_6563)">
         <path d="M24 0H0v24h24V0z" fill="#fff" />
         <path
-          d="M22 10v4"
+          d="M1 16V8c0-1.105.943-2 2.105-2h15.79C20.058 6 21 6.895 21 8v8c0 1.105-.942 2-2.105 2H3.105C1.943 18 1 17.105 1 16z"
           stroke="#000"
-          strokeLinecap="round"
-          strokeLinejoin="round"
         />
         <path
-          d="M1 16V8a2 2 0 012-2h15a2 2 0 012 2v8a2 2 0 01-2 2H3a2 2 0 01-2-2z"
+          d="M22.75 10v4a.75.75 0 01-.5.707V9.293c.291.103.5.38.5.707z"
           stroke="#000"
         />
       </g>
