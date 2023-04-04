@@ -21,7 +21,7 @@ function SvgBatteryWarning(
           stroke="#000"
         />
         <path
-          d="M10.5 9v3M10.5 15.01l.01-.011"
+          d="M11 9v3M11 15.011l.01-.011"
           stroke="#000"
           strokeLinecap="round"
           strokeLinejoin="round"
