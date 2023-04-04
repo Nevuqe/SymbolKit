@@ -14,16 +14,16 @@ function SvgPlay(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M6.906 4.537A.6.6 0 006 5.053v13.894a.6.6 0 00.906.516l11.723-6.947a.6.6 0 000-1.032L6.906 4.537z"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

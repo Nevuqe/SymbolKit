@@ -14,16 +14,16 @@ function SvgStatUp(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M16 20v-8m0 0l3 3m-3-3l-3 3M4 14l8-8 3 3 5-5"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

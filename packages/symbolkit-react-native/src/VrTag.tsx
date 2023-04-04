@@ -14,20 +14,20 @@ function SvgVrTag(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M2 15V9a6 6 0 016-6h8a6 6 0 016 6v6a6 6 0 01-6 6H8a6 6 0 01-6-6z"
-        stroke="currentColor"
+        stroke="#000"
       />
       <Path
-        d="M13 15.5v-2.8m2.857 0c.714 0 2.143 0 2.143-2.1s-1.429-2.1-2.143-2.1H13v4.2m2.857 0H13m2.857 0L18 15.5M11 8.5l-3 7-3-7"
-        stroke="currentColor"
+        d="M13 15.5v-2.8m0 0V8.5h2.857c.714 0 2.143 0 2.143 2.1s-1.429 2.1-2.143 2.1M13 12.7h2.857m0 0L18 15.5M11 8.5l-3 7-3-7"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

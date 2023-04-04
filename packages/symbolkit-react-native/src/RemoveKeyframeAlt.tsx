@@ -15,15 +15,15 @@ function SvgRemoveKeyframeAlt(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M9 12h6M20.777 13.345l-7.297 8.027a2 2 0 01-2.96 0l-7.297-8.027a2 2 0 010-2.69l7.297-8.027a2 2 0 012.96 0l7.297 8.027a2 2 0 010 2.69z"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

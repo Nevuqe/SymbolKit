@@ -7,7 +7,6 @@ function SvgFlare(
     <svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -15,9 +14,10 @@ function SvgFlare(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
         d="M11.456 2.665a.6.6 0 011.088 0l2.864 6.137a.6.6 0 00.29.29l6.137 2.864a.6.6 0 010 1.088l-6.137 2.864a.6.6 0 00-.29.29l-2.864 6.137a.6.6 0 01-1.088 0l-2.864-6.137a.6.6 0 00-.29-.29l-6.137-2.864a.6.6 0 010-1.088l6.137-2.864a.6.6 0 00.29-.29l2.864-6.137z"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

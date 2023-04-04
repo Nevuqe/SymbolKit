@@ -15,15 +15,15 @@ function SvgFlash(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M13 10V3L5 14h6v7l8-11h-6z"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

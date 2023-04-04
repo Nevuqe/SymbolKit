@@ -13,7 +13,6 @@ function SvgCodeBrackets(
   return (
     <Svg
       width="1.5em"
-      strokeWidth={1.5}
       height="1.5em"
       viewBox="0 0 24 24"
       fill="none"
@@ -21,9 +20,10 @@ function SvgCodeBrackets(
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M9 21H8c-1.105 0-2-.894-2-1.999V14c0-1-1.5-2-1.5-2S6 11 6 10V5a2 2 0 012-2h1M15 21h1c1.105 0 2-.894 2-1.999V14c0-1 1.5-2 1.5-2S18 11 18 10V5a2 2 0 00-2-2h-1"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

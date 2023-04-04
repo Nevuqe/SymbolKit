@@ -14,22 +14,22 @@ function SvgModernTv4K(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M7 21h10M13.5 7v4m0 2v-2m0 0l1.37-1.566M17 7l-2.13 2.434m0 0L17 13M9.5 7l-3 4.5H10V13"
-        stroke="currentColor"
+        d="M7 21h10M13.5 7v4m0 0v2m0-2l1.37-1.566m0 0L17 7m-2.13 2.434L17 13M9.5 7l-3 4.5H10V13"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
         d="M2 16.4V3.6a.6.6 0 01.6-.6h18.8a.6.6 0 01.6.6v12.8a.6.6 0 01-.6.6H2.6a.6.6 0 01-.6-.6z"
-        stroke="currentColor"
+        stroke="#000"
       />
     </Svg>
   );

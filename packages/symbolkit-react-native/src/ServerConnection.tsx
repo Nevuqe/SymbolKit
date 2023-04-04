@@ -14,16 +14,16 @@ function SvgServerConnection(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M3 19h9m9 0h-9m0 0v-6m0 0h6V5H6v8h6zM9 9.01l.01-.011M12 9.01l.01-.011"
-        stroke="currentColor"
+        d="M3 19h9m0 0h9m-9 0v-6m0 0h6V5H6v8h6zM9 9.01l.01-.011M12 9.01l.01-.011"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

@@ -7,7 +7,6 @@ function SvgDelivery(
     <svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -15,9 +14,10 @@ function SvgDelivery(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
         d="M2 4h16a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2v-6M12 9V4M8 8H3"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

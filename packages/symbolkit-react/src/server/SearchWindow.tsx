@@ -14,6 +14,7 @@ function SvgSearchWindow(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
         d="M13 21H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v9"
         stroke="#000"

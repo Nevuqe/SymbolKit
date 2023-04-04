@@ -14,16 +14,16 @@ function SvgEaseInControlPoint(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M3 20c8 0 18-16 18-16M17 20a2 2 0 104 0 2 2 0 00-4 0zm0 0h-2M12 20h-2"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

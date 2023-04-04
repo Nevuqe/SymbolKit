@@ -7,7 +7,6 @@ function SvgAreaSearch(
     <svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -15,9 +14,10 @@ function SvgAreaSearch(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
         d="M20.124 20.119a3 3 0 10-4.248-4.237 3 3 0 004.248 4.237zm0 0L22 22M7 2H4v3M4 11v2M11 2h2M11 22h2M20 11v2M17 2h3v3M7 22H4v-3"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

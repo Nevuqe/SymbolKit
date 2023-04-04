@@ -15,21 +15,21 @@ function SvgAngleTool(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M3 21V3h6v12h12v6H3z"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
         d="M13 19v2M9 19v2M3 7h2M3 11h2M3 15h2M17 19v2"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
       />
     </Svg>

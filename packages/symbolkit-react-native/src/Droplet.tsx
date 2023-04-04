@@ -15,15 +15,15 @@ function SvgDroplet(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M20 14c0-4.418-8-12-8-12S4 9.582 4 14a8 8 0 1016 0z"
-        stroke="currentColor"
+        stroke="#000"
       />
     </Svg>
   );

@@ -14,16 +14,16 @@ function SvgDataTransferDown(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M17 20v-1M17 15v-1M7 4v16m0 0l-3-3m3 3l3-3M17 10V4m0 0l-3 3m3-3l3 3"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

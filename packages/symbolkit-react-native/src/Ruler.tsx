@@ -14,16 +14,16 @@ function SvgRuler(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M16 7V2.6a.6.6 0 00-.6-.6H8.6a.6.6 0 00-.6.6v18.8a.6.6 0 00.6.6h6.8a.6.6 0 00.6-.6V17m0-10h-3m3 0v5m0 0h-3m3 0v5m0 0h-3"
-        stroke="currentColor"
+        d="M16 7V2.6a.6.6 0 00-.6-.6H8.6a.6.6 0 00-.6.6v18.8a.6.6 0 00.6.6h6.8a.6.6 0 00.6-.6V17m0-10h-3m3 0v5m0 5v-5m0 5h-3m3-5h-3"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

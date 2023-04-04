@@ -13,7 +13,6 @@ function SvgTaskList(
   return (
     <Svg
       width="1.5em"
-      strokeWidth={1.5}
       height="1.5em"
       viewBox="0 0 24 24"
       fill="none"
@@ -21,9 +20,10 @@ function SvgTaskList(
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M9 6h11M3.8 5.8l.8.8 2-2M3.8 11.8l.8.8 2-2M3.8 17.8l.8.8 2-2M9 12h11M9 18h11"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

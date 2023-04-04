@@ -14,16 +14,16 @@ function SvgDatabaseScriptPlus(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M22 14V8.5M6 13V6a3 3 0 013-3h5M16.992 4h3m3 0h-3m0 0V1m0 3v3M12 21H6a4 4 0 010-8h12a4 4 0 104 4v-3"
-        stroke="currentColor"
+        d="M22 14V8.5M6 13V6a3 3 0 013-3h5M16.992 4h3m0 0h3m-3 0V1m0 3v3M12 21H6a4 4 0 010-8h12a4 4 0 104 4v-3"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

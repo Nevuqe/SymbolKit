@@ -14,6 +14,7 @@ function SvgOpenNewWindow(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
         d="M21 3h-6m6 0l-9 9m9-9v6"
         stroke="#000"

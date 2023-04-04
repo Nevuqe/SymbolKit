@@ -14,24 +14,24 @@ function SvgFacetime(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M2 16V8a6 6 0 016-6h8a6 6 0 016 6v8a6 6 0 01-6 6H8a6 6 0 01-6-6z"
-        stroke="currentColor"
+        stroke="#000"
       />
       <Path
         d="M6 13v-2a2 2 0 012-2h3a2 2 0 012 2v2a2 2 0 01-2 2H8a2 2 0 01-2-2z"
-        stroke="currentColor"
+        stroke="#000"
       />
       <Path
         d="M17.04 9.22l-3.067 2.3a.6.6 0 000 .96l3.067 2.3a.6.6 0 00.96-.48V9.7a.6.6 0 00-.96-.48z"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

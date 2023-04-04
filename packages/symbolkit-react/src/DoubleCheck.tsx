@@ -13,7 +13,6 @@ function SvgDoubleCheck(
     <svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,14 +20,15 @@ function SvgDoubleCheck(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
         d="M1.5 12.5l4.076 4.076a.6.6 0 00.848 0L9 14M16 7l-4 4"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
       />
       <path
         d="M7 12l4.576 4.576a.6.6 0 00.848 0L22 7"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
       />
     </svg>

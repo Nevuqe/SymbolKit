@@ -15,19 +15,19 @@ function SvgCylinder(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M12 2c8 0 8 3 8 3s0 3-8 3-8-3-8-3 0-3 8-3zM12 16c8 0 8 3 8 3s0 3-8 3-8-3-8-3 0-3 8-3z"
-        stroke="currentColor"
+        stroke="#000"
       />
       <Path
         d="M20 5v14M4 5v14"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

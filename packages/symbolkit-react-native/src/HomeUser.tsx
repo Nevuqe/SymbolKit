@@ -14,23 +14,23 @@ function SvgHomeUser(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M2.5 9.5L12 4l9.5 5.5"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <Path d="M7 21v-1a5 5 0 015-5v0a5 5 0 015 5v1" stroke="currentColor" />
+      <Path d="M7 21v-1a5 5 0 0110 0v1" stroke="#000" />
       <Path
         d="M12 15a3 3 0 100-6 3 3 0 000 6z"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

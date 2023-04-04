@@ -13,7 +13,6 @@ function SvgFrameAlt(
     <svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,9 +20,10 @@ function SvgFrameAlt(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
         d="M6 3v18M18 3v18M3 6h18"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -31,11 +31,11 @@ function SvgFrameAlt(
         fillRule="evenodd"
         clipRule="evenodd"
         d="M9.6 9h4.8a.6.6 0 01.6.6v4.8a.6.6 0 01-.6.6H9.6a.6.6 0 01-.6-.6V9.6a.6.6 0 01.6-.6z"
-        fill="currentColor"
+        fill="#000"
       />
       <path
         d="M3 18h18"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

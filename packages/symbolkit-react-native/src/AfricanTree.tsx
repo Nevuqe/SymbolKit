@@ -1,5 +1,5 @@
 import * as React from "react";
-import Svg, { SvgProps, G, Path, Defs, ClipPath } from "react-native-svg";
+import Svg, { SvgProps, G, Path, Mask, Defs, ClipPath } from "react-native-svg";
 import { SymbolKitContext } from "./SymbolKitContext";
 function SvgAfricanTree(
   passedProps: SvgProps,
@@ -15,22 +15,38 @@ function SvgAfricanTree(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
-      <G
-        clipPath="url(#african-tree_svg__clip0_2032_8254)"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <Path d="M12 22V12m0-4v4m0 0l3-3M12.424 18.576l6.169-6.169a5.502 5.502 0 00-.513-8.234 9.904 9.904 0 00-12.16 0 5.502 5.502 0 00-.513 8.234l6.169 6.169a.6.6 0 00.848 0z" />
+      <G clipPath="url(#african-tree_svg__clip0_1_288)">
+        <Path fill="#fff" d="M0 0h24v24H0z" />
+        <Mask
+          id="african-tree_svg__a"
+          style={{
+            maskType: "luminance",
+          }}
+          maskUnits="userSpaceOnUse"
+          x={0}
+          y={0}
+          width={24}
+          height={24}
+        >
+          <Path d="M24 0H0v24h24V0z" fill="#fff" />
+        </Mask>
+        <G
+          mask="url(#african-tree_svg__a)"
+          stroke="#000"
+          strokeWidth={1.5}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <Path d="M12 22V12m0 0V8m0 4l3-3M12.424 18.576l6.169-6.169a5.502 5.502 0 00-.513-8.234 9.904 9.904 0 00-12.16 0 5.502 5.502 0 00-.513 8.234l6.169 6.169a.6.6 0 00.848 0z" />
+        </G>
       </G>
       <Defs>
-        <ClipPath id="african-tree_svg__clip0_2032_8254">
+        <ClipPath id="african-tree_svg__clip0_1_288">
           <Path fill="#fff" d="M0 0h24v24H0z" />
         </ClipPath>
       </Defs>

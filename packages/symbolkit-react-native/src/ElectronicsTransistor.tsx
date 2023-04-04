@@ -14,16 +14,16 @@ function SvgElectronicsTransistor(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M7 16V3.6a.6.6 0 01.6-.6h8.8a.6.6 0 01.6.6V16M7 16h2m-2 0H5m12 0h-2m2 0h2m-7 0v6m0-6H9m3 0h3m-6 0v6m6-6v6"
-        stroke="currentColor"
+        d="M7 16V3.6a.6.6 0 01.6-.6h8.8a.6.6 0 01.6.6V16M7 16h2m-2 0H5m12 0h-2m2 0h2M9 16h3m-3 0v6m6-6h-3m3 0v6m-3-6v6"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

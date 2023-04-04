@@ -13,7 +13,6 @@ function SvgMicrophoneMute(
     <svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,15 +20,16 @@ function SvgMicrophoneMute(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M3 3l18 18M9 9v0a5 5 0 005 5v0m1-3.5V5a3 3 0 00-3-3v0a3 3 0 00-3 3v.5"
-        stroke="currentColor"
+        d="M3 3l18 18M9 9a5 5 0 005 5m1-3.5V5a3 3 0 10-6 0v.5"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M5 10v1a7 7 0 007 7v0a7 7 0 007-7v-1M12 18v4m0 0H9m3 0h3"
-        stroke="currentColor"
+        d="M5 10v1a7 7 0 1014 0v-1M12 18v4m0 0H9m3 0h3"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

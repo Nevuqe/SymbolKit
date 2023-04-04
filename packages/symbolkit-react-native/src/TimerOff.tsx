@@ -14,16 +14,16 @@ function SvgTimerOff(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M9 2h6M5 7l14 14.5M12 10v4M6.19 8.5a8 8 0 0011.05 11.544M19.42 17A8 8 0 009.21 6.5"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

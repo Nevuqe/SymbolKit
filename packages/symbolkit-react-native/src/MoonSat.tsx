@@ -1,5 +1,5 @@
 import * as React from "react";
-import Svg, { SvgProps, Circle, Path } from "react-native-svg";
+import Svg, { SvgProps, Path } from "react-native-svg";
 import { SymbolKitContext } from "./SymbolKitContext";
 function SvgMoonSat(
   passedProps: SvgProps,
@@ -14,21 +14,20 @@ function SvgMoonSat(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
-      <Circle cx={12} cy={12} r={10} stroke="currentColor" />
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M7.633 3.067A3.001 3.001 0 114.017 6.32M22 13.05a3.5 3.5 0 10-3 5.914"
-        stroke="currentColor"
+        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM7.633 3.067A3.001 3.001 0 114.017 6.32M22 13.05a3.5 3.5 0 10-3 5.914"
+        stroke="#000"
       />
       <Path
         d="M14.5 8.51l.01-.011M10 17a2 2 0 100-4 2 2 0 000 4z"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

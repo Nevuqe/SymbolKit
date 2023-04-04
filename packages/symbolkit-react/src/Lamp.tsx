@@ -13,7 +13,6 @@ function SvgLamp(
     <svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,9 +20,10 @@ function SvgLamp(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M9 21h3m3 0h-3m0 0V11m0-4v4m0 0H6l3-8h6l3 8h-6z"
-        stroke="currentColor"
+        d="M9 21h3m0 0h3m-3 0V11m0 0V7m0 4H6l3-8h6l3 8h-6z"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

@@ -14,16 +14,16 @@ function SvgPcMouse(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M12 2v0a8 8 0 018 8v4a8 8 0 01-8 8v0a8 8 0 01-8-8v-4a8 8 0 018-8v0zm0 0v7"
-        stroke="currentColor"
+        d="M12 2a8 8 0 018 8v4a8 8 0 11-16 0v-4a8 8 0 018-8zm0 0v7"
+        stroke="#000"
         strokeLinecap="round"
       />
     </Svg>

@@ -14,16 +14,16 @@ function SvgItalic(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M11 5h3m3 0h-3m0 0l-4 14m0 0H7m3 0h3"
-        stroke="currentColor"
+        d="M11 5h3m0 0h3m-3 0l-4 14m0 0H7m3 0h3"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

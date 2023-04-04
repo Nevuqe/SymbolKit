@@ -15,15 +15,15 @@ function SvgRoundedMirror(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M20 10v4a8 8 0 11-16 0v-4a8 8 0 1116 0zM17.5 4.5L13 8M19 7l-7.5 6"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

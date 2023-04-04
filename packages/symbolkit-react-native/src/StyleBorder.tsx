@@ -14,16 +14,16 @@ function SvgStyleBorder(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M16 2H8a6 6 0 00-6 6v8a6 6 0 006 6h8a6 6 0 006-6V8a6 6 0 00-6-6z"
-        stroke="currentColor"
+        stroke="#000"
         strokeMiterlimit={1.5}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -31,7 +31,7 @@ function SvgStyleBorder(
       />
       <Path
         d="M16 5H8a3 3 0 00-3 3v8a3 3 0 003 3h8a3 3 0 003-3V8a3 3 0 00-3-3z"
-        stroke="currentColor"
+        stroke="#000"
         strokeMiterlimit={1.5}
         strokeLinecap="round"
         strokeLinejoin="round"

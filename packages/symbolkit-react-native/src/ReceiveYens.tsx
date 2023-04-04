@@ -14,16 +14,16 @@ function SvgReceiveYens(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M21 12h-8m0 0l3.84-4M13 12l3.84 4M3 13h8M3 7l4 5.5M11 7l-4 5.5m0 0V18M3 15h8"
-        stroke="currentColor"
+        d="M21 12h-8m0 0l3.84-4M13 12l3.84 4M3 13h8M3 7l4 5.5m0 0L11 7m-4 5.5V18M3 15h8"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

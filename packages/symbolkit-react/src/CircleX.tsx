@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SymbolKitContext } from "./SymbolKitContext";
-function SvgBatteryIndicator(
+function SvgCircleX(
   passedProps: React.SVGProps<SVGSVGElement>,
   svgRef?: React.Ref<SVGSVGElement>
 ) {
@@ -13,7 +13,6 @@ function SvgBatteryIndicator(
     <svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,14 +20,15 @@ function SvgBatteryIndicator(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M14 13h4M6 13h2m2 0H8m0 0v-2m0 2v2M6 7H2.6a.6.6 0 00-.6.6v10.8a.6.6 0 00.6.6h18.8a.6.6 0 00.6-.6V7.6a.6.6 0 00-.6-.6H18M6 7V5h2v2M6 7h2m0 0h8m0 0V5h2v2m-2 0h2"
-        stroke="currentColor"
+        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM15 16L9 8M9 16l6-8"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgBatteryIndicator);
+const ForwardRef = React.forwardRef(SvgCircleX);
 export default ForwardRef;

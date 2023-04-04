@@ -15,36 +15,36 @@ function Svg3DArcCenterPt(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M22 16c0-5.523-4.477-10-10-10-4.1 0-7.625 2.468-9.168 6"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeDasharray="3 3"
       />
       <Path
         d="M2 17a1 1 0 100-2 1 1 0 000 2z"
-        fill="currentColor"
-        stroke="currentColor"
+        fill="#000"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
         d="M2 16h10"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
         d="M12 17a1 1 0 100-2 1 1 0 000 2z"
-        fill="currentColor"
-        stroke="currentColor"
+        fill="#000"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

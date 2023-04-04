@@ -1,5 +1,5 @@
 import * as React from "react";
-import Svg, { SvgProps, Rect, Path } from "react-native-svg";
+import Svg, { SvgProps, Path } from "react-native-svg";
 import { SymbolKitContext } from "./SymbolKitContext";
 function SvgNetworkAlt(
   passedProps: SvgProps,
@@ -14,37 +14,20 @@ function SvgNetworkAlt(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
-      <Rect
-        width={7}
-        height={5}
-        rx={0.6}
-        transform="matrix(1 0 0 -1 3 22)"
-        stroke="currentColor"
-      />
-      <Rect
-        width={7}
-        height={5}
-        rx={0.6}
-        transform="matrix(1 0 0 -1 8.5 7)"
-        stroke="currentColor"
-      />
-      <Rect
-        width={7}
-        height={5}
-        rx={0.6}
-        transform="matrix(1 0 0 -1 14 22)"
-        stroke="currentColor"
+      <Path fill="#fff" d="M0 0h24v24H0z" />
+      <Path
+        d="M9.4 22H3.6a.6.6 0 01-.6-.6v-3.8a.6.6 0 01.6-.6h5.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6zM14.9 7H9.1a.6.6 0 01-.6-.6V2.6a.6.6 0 01.6-.6h5.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6zM20.4 22h-5.8a.6.6 0 01-.6-.6v-3.8a.6.6 0 01.6-.6h5.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6z"
+        stroke="#000"
       />
       <Path
         d="M6.5 17v-3.5a2 2 0 012-2h7a2 2 0 012 2V17M12 11.5V7"
-        stroke="currentColor"
+        stroke="#000"
       />
     </Svg>
   );

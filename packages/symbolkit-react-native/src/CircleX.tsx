@@ -1,7 +1,7 @@
 import * as React from "react";
 import Svg, { SvgProps, Path } from "react-native-svg";
 import { SymbolKitContext } from "./SymbolKitContext";
-function SvgVueJs(
+function SvgCircleX(
   passedProps: SvgProps,
   svgRef?: React.Ref<React.Component<SvgProps>>
 ) {
@@ -15,26 +15,20 @@ function SvgVueJs(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M12 20.5L22.5 4h-4L12 14 5.5 4h-4L12 20.5z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <Path
-        d="M18.5 4h-4L12 7.5 9.5 4h-4"
-        stroke="currentColor"
+        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM15 16L9 8M9 16l6-8"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </Svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgVueJs);
+const ForwardRef = React.forwardRef(SvgCircleX);
 export default ForwardRef;

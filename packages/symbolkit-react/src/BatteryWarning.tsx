@@ -13,7 +13,6 @@ function SvgBatteryWarning(
     <svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,22 +20,30 @@ function SvgBatteryWarning(
       ref={svgRef}
       {...props}
     >
-      <path
-        d="M23 10v4"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M1 16V8a2 2 0 012-2h15a2 2 0 012 2v8a2 2 0 01-2 2H3a2 2 0 01-2-2z"
-        stroke="currentColor"
-      />
-      <path
-        d="M10.5 9v2M10.5 15.01l.01-.011"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <g clipPath="url(#battery-warning_svg__clip0_1_6582)">
+        <path d="M24 0H0v24h24V0z" fill="#fff" />
+        <path
+          d="M22 10v4"
+          stroke="#000"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M1 16V8a2 2 0 012-2h15a2 2 0 012 2v8a2 2 0 01-2 2H3a2 2 0 01-2-2z"
+          stroke="#000"
+        />
+        <path
+          d="M10.5 9v3M10.5 15.01l.01-.011"
+          stroke="#000"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="battery-warning_svg__clip0_1_6582">
+          <path fill="#fff" d="M0 0h24v24H0z" />
+        </clipPath>
+      </defs>
     </svg>
   );
 }

@@ -1,5 +1,5 @@
 import * as React from "react";
-function SvgSpotify(
+function SvgCircleX(
   props: React.SVGProps<SVGSVGElement>,
   svgRef?: React.Ref<SVGSVGElement>
 ) {
@@ -8,27 +8,21 @@ function SvgSpotify(
       width="1.5em"
       height="1.5em"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M7 15s4.5-1 9 1M6.5 12s6-1.5 11 1.5M6 9c3-.5 8-1 13 2"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"
-        stroke="currentColor"
+        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM15 16L9 8M9 16l6-8"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgSpotify);
+const ForwardRef = React.forwardRef(SvgCircleX);
 export default ForwardRef;

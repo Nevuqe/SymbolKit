@@ -14,27 +14,27 @@ function SvgPercentageSquare(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M3 20.4V3.6a.6.6 0 01.6-.6h16.8a.6.6 0 01.6.6v16.8a.6.6 0 01-.6.6H3.6a.6.6 0 01-.6-.6z"
-        stroke="currentColor"
+        stroke="#000"
       />
       <Path
         d="M15.5 16a.5.5 0 100-1 .5.5 0 000 1zM8.5 9a.5.5 0 100-1 .5.5 0 000 1z"
-        fill="currentColor"
-        stroke="currentColor"
+        fill="#000"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
         d="M16 8l-8 8"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

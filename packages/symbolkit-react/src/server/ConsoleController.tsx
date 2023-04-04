@@ -1,5 +1,5 @@
 import * as React from "react";
-function SvgTrello(
+function SvgConsoleController(
   props: React.SVGProps<SVGSVGElement>,
   svgRef?: React.Ref<SVGSVGElement>
 ) {
@@ -7,7 +7,6 @@ function SvgTrello(
     <svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -15,20 +14,21 @@ function SvgTrello(
       ref={svgRef}
       {...props}
     >
+      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2z"
-        stroke="currentColor"
+        d="M17.5 17.5c2.5 3.5 6.449.915 5.5-2.5-1.425-5.129-2.2-7.984-2.603-9.492A2.032 2.032 0 0018.438 4H5.562c-.918 0-1.718.625-1.941 1.515C2.78 8.863 2.033 11.802 1.144 15c-.948 3.415 3 6 5.5 2.5"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M10.4 6H6.6a.6.6 0 00-.6.6v10.8a.6.6 0 00.6.6h3.8a.6.6 0 00.6-.6V6.6a.6.6 0 00-.6-.6zM17.4 6h-3.8a.6.6 0 00-.6.6v6.8a.6.6 0 00.6.6h3.8a.6.6 0 00.6-.6V6.6a.6.6 0 00-.6-.6z"
-        stroke="currentColor"
+        d="M16 4v2a2 2 0 01-2 2h-4a2 2 0 01-2-2V4M8 16a2 2 0 100-4 2 2 0 000 4zM16 16a2 2 0 100-4 2 2 0 000 4z"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgTrello);
+const ForwardRef = React.forwardRef(SvgConsoleController);
 export default ForwardRef;

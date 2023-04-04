@@ -14,16 +14,16 @@ function SvgAppNotification(
     <Svg
       width="1.5em"
       height="1.5em"
-      strokeWidth={1.5}
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
       ref={svgRef}
       {...props}
     >
+      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
         d="M19 8a3 3 0 100-6 3 3 0 000 6zM21 12v3a6 6 0 01-6 6H9a6 6 0 01-6-6V9a6 6 0 016-6h3"
-        stroke="currentColor"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
