@@ -1,7 +1,7 @@
 import * as React from "react";
 import Svg, { SvgProps, Path } from "react-native-svg";
 import { SymbolKitContext } from "./SymbolKitContext";
-function SvgShareAndroid(
+function SvgAddPage(
   passedProps: SvgProps,
   svgRef?: React.Ref<React.Component<SvgProps>>
 ) {
@@ -20,16 +20,20 @@ function SvgShareAndroid(
       ref={svgRef}
       {...props}
     >
-      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M18 22a3 3 0 100-6 3 3 0 000 6zM18 8a3 3 0 100-6 3 3 0 000 6zM6 15a3 3 0 100-6 3 3 0 000 6z"
+        d="M9 12h3m3 0h-3m0 0V9m0 3v3M4 18.8V5.2c0-1.12 0-1.68.218-2.108a2 2 0 01.874-.874C5.52 2 6.08 2 7.2 2h7.974c.49 0 .734 0 .965.055.204.05.399.13.578.24.201.123.374.296.72.642l1.626 1.626c.346.346.519.519.642.72.11.18.19.374.24.579.055.23.055.474.055.963V18.8c0 1.12 0 1.68-.218 2.108a2 2 0 01-.874.874C18.48 22 17.92 22 16.8 22H7.2c-1.12 0-1.68 0-2.108-.218a2 2 0 01-.874-.874C4 20.48 4 19.92 4 18.8z"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <Path d="M15.5 6.5l-7 4M8.5 13.5l7 4" stroke="#000" />
+      <Path
+        d="M16 2.5v2.9a.6.6 0 00.6.6h2.9"
+        stroke="#000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </Svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgShareAndroid);
+const ForwardRef = React.forwardRef(SvgAddPage);
 export default ForwardRef;

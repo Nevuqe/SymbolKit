@@ -1,5 +1,5 @@
 import * as React from "react";
-function SvgCutAlt(
+function SvgAddPageAlt(
   props: React.SVGProps<SVGSVGElement>,
   svgRef?: React.Ref<SVGSVGElement>
 ) {
@@ -14,9 +14,14 @@ function SvgCutAlt(
       ref={svgRef}
       {...props}
     >
-      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M6.236 8a3 3 0 10-4.472-4 3 3 0 004.472 4zm0 0L16 16M17 12h1M22 12h1M6.236 16a3 3 0 11-4.472 4 3 3 0 014.472-4zm0 0L16 8"
+        d="M4 12V4a2 2 0 012-2h9.672a2 2 0 011.414.586l2.328 2.328A2 2 0 0120 6.328V20a2 2 0 01-2 2h-7"
+        stroke="#000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M16 2.5v2.9a.6.6 0 00.6.6h2.9M1.992 19h3m3 0h-3m0 0v-3m0 3v3"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -24,5 +29,5 @@ function SvgCutAlt(
     </svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgCutAlt);
+const ForwardRef = React.forwardRef(SvgAddPageAlt);
 export default ForwardRef;

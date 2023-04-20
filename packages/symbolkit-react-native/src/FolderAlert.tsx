@@ -1,7 +1,7 @@
 import * as React from "react";
 import Svg, { SvgProps, Path } from "react-native-svg";
 import { SymbolKitContext } from "./SymbolKitContext";
-function SvgSoundHigh(
+function SvgFolderAlert(
   passedProps: SvgProps,
   svgRef?: React.Ref<React.Component<SvgProps>>
 ) {
@@ -20,13 +20,14 @@ function SvgSoundHigh(
       ref={svgRef}
       {...props}
     >
-      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M1 13.857v-3.714a2 2 0 012-2h2.9a1 1 0 00.55-.165l6-3.956a1 1 0 011.55.835v14.286a1 1 0 01-1.55.835l-6-3.956a1 1 0 00-.55-.165H3a2 2 0 01-2-2z"
+        d="M18 3v4M18 11.01l.01-.011M22 7v9.8c0 1.12 0 1.68-.218 2.108a2 2 0 01-.874.874C20.48 20 19.92 20 18.8 20H5.2c-1.12 0-1.68 0-2.108-.218a2 2 0 01-.874-.874C2 18.48 2 17.92 2 16.8V7.5"
         stroke="#000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <Path
-        d="M17.5 7.5S19 9 19 11.5s-1.5 4-1.5 4M20.5 4.5S23 7 23 11.5s-2.5 7-2.5 7"
+        d="M14 7h-.316c-.438 0-.657 0-.866-.045a1.998 1.998 0 01-.53-.196c-.188-.102-.354-.244-.687-.53L9.9 4.77c-.333-.285-.5-.427-.687-.529a2 2 0 00-.53-.196C8.474 4 8.254 4 7.816 4H5.2c-1.12 0-1.68 0-2.108.218a2 2 0 00-.874.874C2 5.52 2 6.08 2 7.2v.6c0 1.12 0 1.68.218 2.108a2 2 0 00.874.874C3.52 11 4.08 11 5.2 11H14"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -34,5 +35,5 @@ function SvgSoundHigh(
     </Svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgSoundHigh);
+const ForwardRef = React.forwardRef(SvgFolderAlert);
 export default ForwardRef;

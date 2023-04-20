@@ -20,15 +20,14 @@ function SvgSubmitDocument(
       ref={svgRef}
       {...props}
     >
-      <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M20 13V5.749a.6.6 0 00-.176-.425l-3.148-3.148A.6.6 0 0016.252 2H4.6a.6.6 0 00-.6.6v18.8a.6.6 0 00.6.6H14"
+        d="M20 13V6.328a2 2 0 00-.586-1.414l-2.328-2.328A2 2 0 0015.672 2H6a2 2 0 00-2 2v16a2 2 0 002 2h8"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
-        d="M16 2v3.4a.6.6 0 00.6.6H20M16 19h6m0 0l-3-3m3 3l-3 3"
+        d="M16 2.5v2.9a.6.6 0 00.6.6h2.9M16 19h6m0 0l-3-3m3 3l-3 3"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"

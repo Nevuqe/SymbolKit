@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SymbolKitContext } from "./SymbolKitContext";
-function SvgSoundHigh(
+function SvgHomenet(
   passedProps: React.SVGProps<SVGSVGElement>,
   svgRef?: React.Ref<SVGSVGElement>
 ) {
@@ -20,13 +20,14 @@ function SvgSoundHigh(
       ref={svgRef}
       {...props}
     >
-      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M1 13.857v-3.714a2 2 0 012-2h2.9a1 1 0 00.55-.165l6-3.956a1 1 0 011.55.835v14.286a1 1 0 01-1.55.835l-6-3.956a1 1 0 00-.55-.165H3a2 2 0 01-2-2z"
+        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10M13 2.05S16 6 16 12"
         stroke="#000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M17.5 7.5S19 9 19 11.5s-1.5 4-1.5 4M20.5 4.5S23 7 23 11.5s-2.5 7-2.5 7"
+        d="M11 21.95S8 18 8 12c0-6 3-9.95 3-9.95M2.63 15.5H12M2.63 8.5h18.74M15.778 20.564l-.739-5.455c-.014-.102-.02-.153-.007-.196a.2.2 0 01.066-.096c.035-.028.085-.04.185-.063l3.144-.737c.027-.006.04-.01.055-.01a.189.189 0 01.036 0c.014 0 .028.004.055.01l3.144.737c.1.024.15.035.185.063a.2.2 0 01.066.096c.014.043.007.094-.007.196l-.739 5.455C21.195 20.767 21.028 22 18.5 22s-2.695-1.233-2.722-1.436z"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -34,5 +35,5 @@ function SvgSoundHigh(
     </svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgSoundHigh);
+const ForwardRef = React.forwardRef(SvgHomenet);
 export default ForwardRef;

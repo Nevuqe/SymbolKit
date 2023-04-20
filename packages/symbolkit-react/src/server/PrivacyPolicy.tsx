@@ -32,3 +32,13 @@ function SvgPrivacyPolicy(
 }
 const ForwardRef = React.forwardRef(SvgPrivacyPolicy);
 export default ForwardRef;
+-.025-.16-.037-.208-.06-.832-.415-2.722-1.779-3.057-5.705-.034-.4-.051-.6.02-.803.058-.167.183-.342.322-.452.168-.134.383-.188.813-.297l1.9-.483h0c.147-.037.22-.056.295-.063a.998.998 0 01.198 0c.075.007.148.026.295.063z"
+        stroke="#000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+const ForwardRef = React.forwardRef(SvgPrivacypolicy);
+export default ForwardRef;

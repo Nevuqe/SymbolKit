@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SymbolKitContext } from "./SymbolKitContext";
-function SvgCutAlt(
+function SvgMultiplePagesDelete(
   passedProps: React.SVGProps<SVGSVGElement>,
   svgRef?: React.Ref<SVGSVGElement>
 ) {
@@ -20,9 +20,20 @@ function SvgCutAlt(
       ref={svgRef}
       {...props}
     >
-      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M6.236 8a3 3 0 10-4.472-4 3 3 0 004.472 4zm0 0L16 16M17 12h1M22 12h1M6.236 16a3 3 0 11-4.472 4 3 3 0 014.472-4zm0 0L16 8"
+        d="M2.87 21.121L4.993 19m2.121-2.121L4.993 19m0 0L2.87 16.879M4.992 19l2.121 2.121M7 2h8.672a2 2 0 011.414.586l3.328 3.328A2 2 0 0121 7.328V19"
+        stroke="#000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M11 22h5a2 2 0 002-2V9.328a2 2 0 00-.586-1.414l-2.328-2.328A2 2 0 0013.672 5H5a2 2 0 00-2 2v6"
+        stroke="#000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M14 5.5v2.9a.6.6 0 00.6.6h2.9"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -30,5 +41,5 @@ function SvgCutAlt(
     </svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgCutAlt);
+const ForwardRef = React.forwardRef(SvgMultiplePagesDelete);
 export default ForwardRef;

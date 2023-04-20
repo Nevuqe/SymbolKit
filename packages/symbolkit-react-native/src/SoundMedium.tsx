@@ -1,7 +1,7 @@
 import * as React from "react";
 import Svg, { SvgProps, Path } from "react-native-svg";
 import { SymbolKitContext } from "./SymbolKitContext";
-function SvgCutAlt(
+function SvgSoundMedium(
   passedProps: SvgProps,
   svgRef?: React.Ref<React.Component<SvgProps>>
 ) {
@@ -22,7 +22,11 @@ function SvgCutAlt(
     >
       <Path fill="#fff" d="M0 0h24v24H0z" />
       <Path
-        d="M6.236 8a3 3 0 10-4.472-4 3 3 0 004.472 4zm0 0L16 16M17 12h1M22 12h1M6.236 16a3 3 0 11-4.472 4 3 3 0 014.472-4zm0 0L16 8"
+        d="M1 13.857v-3.714a2 2 0 012-2h2.9a1 1 0 00.55-.165l6-3.956a1 1 0 011.55.835v14.286a1 1 0 01-1.55.835l-6-3.956a1 1 0 00-.55-.165H3a2 2 0 01-2-2z"
+        stroke="#000"
+      />
+      <Path
+        d="M17.5 7.5S19 9 19 11.5s-1.5 4-1.5 4M20.5 4.5S23 7 23 11.5s-2.5 7-2.5 7"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -30,5 +34,5 @@ function SvgCutAlt(
     </Svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgCutAlt);
+const ForwardRef = React.forwardRef(SvgSoundMedium);
 export default ForwardRef;

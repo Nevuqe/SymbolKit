@@ -1,5 +1,5 @@
 import * as React from "react";
-function SvgShareAndroid(
+function SvgShare(
   props: React.SVGProps<SVGSVGElement>,
   svgRef?: React.Ref<SVGSVGElement>
 ) {
@@ -16,14 +16,13 @@ function SvgShareAndroid(
     >
       <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M18 22a3 3 0 100-6 3 3 0 000 6zM18 8a3 3 0 100-6 3 3 0 000 6zM6 15a3 3 0 100-6 3 3 0 000 6z"
+        d="M20 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6M12 15V3m0 0L8.5 6.5M12 3l3.5 3.5"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <path d="M15.5 6.5l-7 4M8.5 13.5l7 4" stroke="#000" />
     </svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgShareAndroid);
+const ForwardRef = React.forwardRef(SvgShare);
 export default ForwardRef;

@@ -20,15 +20,14 @@ function SvgRemovePageAlt(
       ref={svgRef}
       {...props}
     >
-      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M4 12V2.6a.6.6 0 01.6-.6h11.652a.6.6 0 01.424.176l3.148 3.148A.6.6 0 0120 5.75V21.4a.6.6 0 01-.6.6H11"
+        d="M4 12V4a2 2 0 012-2h9.672a2 2 0 011.414.586l2.328 2.328A2 2 0 0120 6.328V20a2 2 0 01-2 2h-7"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M16 2v3.4a.6.6 0 00.6.6H20M1.992 19h6"
+        d="M16 2.5v2.9a.6.6 0 00.6.6h2.9M1.992 19h6"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"

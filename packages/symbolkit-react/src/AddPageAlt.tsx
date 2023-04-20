@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SymbolKitContext } from "./SymbolKitContext";
-function SvgShareAndroid(
+function SvgAddPageAlt(
   passedProps: React.SVGProps<SVGSVGElement>,
   svgRef?: React.Ref<SVGSVGElement>
 ) {
@@ -20,16 +20,20 @@ function SvgShareAndroid(
       ref={svgRef}
       {...props}
     >
-      <path fill="#fff" d="M0 0h24v24H0z" />
       <path
-        d="M18 22a3 3 0 100-6 3 3 0 000 6zM18 8a3 3 0 100-6 3 3 0 000 6zM6 15a3 3 0 100-6 3 3 0 000 6z"
+        d="M4 12V4a2 2 0 012-2h9.672a2 2 0 011.414.586l2.328 2.328A2 2 0 0120 6.328V20a2 2 0 01-2 2h-7"
         stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <path d="M15.5 6.5l-7 4M8.5 13.5l7 4" stroke="#000" />
+      <path
+        d="M16 2.5v2.9a.6.6 0 00.6.6h2.9M1.992 19h3m3 0h-3m0 0v-3m0 3v3"
+        stroke="#000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
-const ForwardRef = React.forwardRef(SvgShareAndroid);
+const ForwardRef = React.forwardRef(SvgAddPageAlt);
 export default ForwardRef;
