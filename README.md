@@ -1,7 +1,5 @@
 # What is SymbolKit?
 
-<img align="right" width="370" height="370" src="assets/logo.png">
-
 SymbolKit, an open-source library consisting of over 1300+ SVG icons that you can use in your own projects. These icons are intended for the usage of UI elements in the Enso Operating System. However, these can be used for designing apps, or creating marketing materials. SymbolKit has the icons you need to make your designs stand out.
 
 For more information and resources on SymbolKit, you can read through our Human Interface Guidelines at [developer.nevuqe.com](https://developer.nevuqe.com).
